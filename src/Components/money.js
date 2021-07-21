@@ -6,19 +6,17 @@ export default class money extends Component {
             this.state = {
                 allowance: Math.random()*10
             }
-        this.updateMoney = this.updateMoney.bind(this)
-        this.setMoney = this.setMoney.bind(this)
-        this.randomMoney = this.randomMoney.bind(this)
+            this.updateMoney = this.updateMoney.bind(this)
+            this.setMoney = this.setMoney.bind(this)
+            this.randomMoney = this.randomMoney.bind(this)
         }
 
 updateMoney() {
     this.setState ({allowance: this.state.allowance-1})
-
 }
 
 setMoney() {
     this.setState ({allowance: 10})
-
 }
 
 randomMoney() {
@@ -26,15 +24,12 @@ randomMoney() {
 
 }
 
-
-
-
     render() {
         return (
             <div>
                 You have ${this.state.allowance.toFixed(2)}
-                <button onClick ={this.setMoney} > Set amount  </button>
-                < button onClick ={this.randomMoney} > Random  </button>
+                <button onClick ={this.setMoney} > Get $10 </button>
+                < button onClick ={this.randomMoney} > Get Random Amount </button>
             </div>
         )
     }
