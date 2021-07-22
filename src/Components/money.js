@@ -1,40 +1,29 @@
-import React, { Component } from 'react'
+import React from 'react'
+import CandyShopWrapper from './candyShopWrapper';
+import { useState } from 'react';
 
-export default class money extends Component {
-        constructor (props) {
-            super(props)
-            this.state = {
-                allowance: Math.random()*10
-            }
-            this.updateMoney = this.updateMoney.bind(this)
-            this.setMoney = this.setMoney.bind(this)
-            this.randomMoney = this.randomMoney.bind(this)
-        }
 
-updateMoney() {
-    this.setState ({allowance: this.state.allowance-1})
-}
 
-setMoney() {
-    this.setState ({allowance: 10})
-}
-
-randomMoney() {
-    this.setState ({allowance: Math.random()*10})
-
-}
-
-    render() {
-        return (
-            <div>
-                You have ${this.state.allowance.toFixed(2)}
-                <button onClick ={this.setMoney} > Get $10 </button>
-                < button onClick ={this.randomMoney} > Get Random Amount </button>
-            </div>
-        )
+function Money() {
+  
+    const [allowance, setAllowance] = useState((Math.random()*10).toFixed(2));
+    const updateMoney = (price) => { 
+        setAllowance(allowance - price);
     }
-}
 
+    return (
+        <div className="App">
+            <input id={"allowanceInput"}/>
+            <button onClick={() => setAllowance(document.getElementById("allowanceInput").value)}>
+                Set Money
+            </button>
+            <button onClick={() => setAllowance((Math.random() *10 ).toFixed(2))}>
+                Random Amount
+            </button>
+            <CandyShopWrapper updateMoney={updateMoney}/>
+            <div>{allowance}</div>
+        </div>
+        )
+    }   
 
-
-
+export default Money; 
