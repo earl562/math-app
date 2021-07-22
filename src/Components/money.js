@@ -26,7 +26,7 @@ function Money() {
                 Random Amount
             </button>
             <CandyShopWrapper updateMoney={updateMoney}/>
-            <div className="amount">Remaining Balance: ${allowance.toFixed(2)}</div>
+            <div className="amount">Remaining Balance: ${parseInt(allowance.toFixed(2))}</div>
         </div>
         )
     }
