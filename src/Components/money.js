@@ -3,7 +3,6 @@ import CandyShopWrapper from './candyShopWrapper';
 import { useState } from 'react';
 
 
-
 function Money() {
   
     const [allowance, setAllowance] = useState((Math.random()*10).toFixed(2));
@@ -12,12 +11,10 @@ function Money() {
 
     }
 
-function Underzero() {
-    updateMoney(0)
-    alert("You don't have enough money :(")
-}
-
-
+    function Underzero() {
+        updateMoney(0)
+        alert("Sorry, you don't have enough money :(")
+    }
 
     return (
         <div className="App">
@@ -32,10 +29,6 @@ function Underzero() {
             <div>{allowance}</div>
         </div>
         )
-    }   
-
-
- 
-    
+    }
 
 export default Money; 
