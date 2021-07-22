@@ -15,7 +15,7 @@ export default function CandyItem(props) {
         <div className="candyItem">
             <img src={props.object.path} style={imageStyles} onClick = {() => props.updateMoney(props.object.price)}/>
             <p>{props.object.name}</p>
-            <p>{props.object.price}</p>
+            <p>${props.object.price}</p>
         </div>
     )
 }
