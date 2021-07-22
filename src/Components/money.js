@@ -8,8 +8,16 @@ function Money() {
   
     const [allowance, setAllowance] = useState((Math.random()*10).toFixed(2));
     const updateMoney = (price) => { 
-        setAllowance(allowance - price);
+        setAllowance( allowance - price < 0 ?  Underzero : allowance - price);
+
     }
+
+function Underzero() {
+    updateMoney(0)
+    alert("You don't have enough money :(")
+}
+
+
 
     return (
         <div className="App">
@@ -26,4 +34,10 @@ function Money() {
         )
     }   
 
+
+ 
+    
+
 export default Money; 
+
+
