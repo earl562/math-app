@@ -5,19 +5,19 @@ import ChocolateBar from '../images/chocolate-bar.png'
 import CottonCandy from '../images/cotton-candy.png'
 import Taffy from '../images/taffy.png'
 import GummyBear from '../images/gummy-bear.png'
-import Candy from '../images/candy.png'
+import Candy from '../images/hard-candy.png'
 import Lollipops from '../images/lollipops.png'
 
 
 
 
 export default function CandyShopWrapper(props) {
-    let chocolateBar = new CandyItemObject('Chocolate Bar', 1.5, ChocolateBar)
-    let cottonCandy = new CandyItemObject('Cotton Candy', 1.5, CottonCandy)
-    let gummyBear = new CandyItemObject('Gummy Bear', 1.5, GummyBear)
-    let lollipops = new CandyItemObject('Lollipops', 1.5, Lollipops)
-    let candy = new CandyItemObject('Candy', 1.5, Candy)
-    let taffy = new CandyItemObject('Taffy', 1.5, Taffy)
+    let chocolateBar = new CandyItemObject('Chocolate Bar', 2.25, ChocolateBar)
+    let cottonCandy = new CandyItemObject('Cotton Candy', 3.05, CottonCandy)
+    let gummyBear = new CandyItemObject('Gummy Bear', 5.00, GummyBear)
+    let lollipops = new CandyItemObject('Lollipops', 1.50, Lollipops)
+    let candy = new CandyItemObject('Hard Candy', 0.12, Candy)
+    let taffy = new CandyItemObject('Taffy', 0.55, Taffy)
     
     let candies = [chocolateBar,cottonCandy,gummyBear,lollipops,candy,taffy]
     
