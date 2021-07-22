@@ -19,7 +19,7 @@ function Money() {
     return (
         <div>
             <input className="box" id={"allowanceInput"}/>
-            <button className="submit" onClick={() => setAllowance(document.getElementById("allowanceInput").value)}>
+            <button className="submit" onClick={() => setAllowance(parseInt(document.getElementById("allowanceInput").value))}>
                 Set Money
             </button>
             <button className="submit" onClick={() => setAllowance((Math.random() *10 ))}>
