@@ -1,0 +1,27 @@
+.title {
+    background-color: lightblue;
+    text-align: center;
+    font-size: 28px;
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+    top: 650px;
+    background-color: lightblue;
+}
+
+.candyBox {
+    width: 600px;
+    height: 200px;
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+
+.candyItem {
+    display: inline-block;
+}

@@ -24,7 +24,7 @@ export default function CandyShopWrapper(props) {
     
     
     return (
-        <div>
+        <div className="candyBox">
             {
                 candies.map((candy,index)=>{
                     return (
