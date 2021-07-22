@@ -1,5 +1,5 @@
 .title {
-    background-color: #5b9fab;
+    background-color: #acd4c9;
     text-align: center;
     font-size: 64px;
     text-align: center;
@@ -14,7 +14,7 @@
 
 .footer {
     text-align: center;
-    background-color: #5b9fab;
+    background-color: #acd4c9;
     padding: 20px;
     position: fixed;
     left: 0;
@@ -27,7 +27,7 @@
 .candyBox {
     width: 600px;
     height: 200px;
-    border: 15px solid #5b9fab;
+    border: 15px solid #acd4c9;
     padding: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -56,7 +56,7 @@
 }
 
 .submit {
-  background-color: #5b9fab;
+  background-color: #acd4c9;
   border: none;
   color: #ff88bd;
   -webkit-text-stroke-width: .05px;
