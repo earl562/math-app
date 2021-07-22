@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 function Money() {
   
-    const [allowance, setAllowance] = useState((Math.random()*10).toFixed(2));
+    const [allowance, setAllowance] = useState((Math.random()*10));
     const updateMoney = (price) => { 
         setAllowance(allowance - price);
     }
@@ -17,11 +17,11 @@ function Money() {
             <button onClick={() => setAllowance(document.getElementById("allowanceInput").value)}>
                 Set Money
             </button>
-            <button onClick={() => setAllowance((Math.random() *10 ).toFixed(2))}>
+            <button onClick={() => setAllowance((Math.random() *10 ))}>
                 Random Amount
             </button>
             <CandyShopWrapper updateMoney={updateMoney}/>
-            <div>{allowance}</div>
+            <div>{allowance.toFixed(2)}</div>
         </div>
         )
     }   
