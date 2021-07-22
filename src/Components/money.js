@@ -17,14 +17,19 @@ function Money() {
     }
 
     return (
-        <div className="buttons">
-            <input className="box" id={"allowanceInput"}/>
-            <button className="submit" onClick={() => setAllowance(parseFloat(document.getElementById("allowanceInput").value))}>
-                Set Money
-            </button>
-            <button className="submit" onClick={() => setAllowance(((Math.random() *10).toFixed(2) ))}>
-                Random Amount
-            </button>
+        <div >
+            <div className="amount">
+                <input className="box" placeholder="Enter Dollar Amount" id={"allowanceInput"}/>
+            </div>
+            <div className="amount">
+                <button className="submit" onClick={() => setAllowance(parseFloat(document.getElementById("allowanceInput").value))}>
+                    Set Amount
+                </button>
+                <button className="submit" onClick={() => setAllowance(((Math.random() *10).toFixed(2) ))}>
+                    Random Amount
+                </button>
+            </div>
+            
             <CandyShopWrapper updateMoney={updateMoney}/>
             <div className="amount">Remaining Balance: ${allowance}</div>
         </div>
