@@ -17,7 +17,7 @@ function Money() {
     }
 
     return (
-        <div>
+        <div className="buttons">
             <input className="box" id={"allowanceInput"}/>
             <button className="submit" onClick={() => setAllowance(parseFloat(document.getElementById("allowanceInput").value))}>
                 Set Money
