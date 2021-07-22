@@ -1,3 +1,6 @@
+.App{
+}
+
 .title {
     background-color: #acd4c9;
     text-align: center;
@@ -8,24 +11,23 @@
     top: 0;
     margin: 0;
     color: #ff88bd;
-    -webkit-text-stroke-width: .5px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    -webkit-text-stroke-width: .3px;
     -webkit-text-stroke-color: black;
     }
 
 .footer {
     text-align: center;
     background-color: #acd4c9;
-    padding: 20px;
     position: fixed;
     left: 0;
     bottom: 0;
-    height: 60px;
     width: 100%;
     margin: 0;
 }
 
 .candyBox {
-    width: 720px;
+    width: 800px;
     height: 200px;
     border: 15px solid #acd4c9;
     padding: 50px;
@@ -36,8 +38,9 @@
 
 .candyItem {
     display: inline-block;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
+    font-weight: bold;
 }
 
 .amount{
@@ -60,14 +63,28 @@
   background-color: #acd4c9;
   border: none;
   color: #ff88bd;
-  -webkit-text-stroke-width: .05px;
+  -webkit-text-stroke-width: .25px;
   -webkit-text-stroke-color: black;
   font-size: 24px;
   text-decoration: none;
-  margin: 4px 2px;
+  margin: 4px;
+  padding: 7px;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 .buttons{
   justify-content: center;
+}
+
+.logo{
+    width: 125px;
+}
+
+.team{
+    padding-bottom: 5px;
+    color: white;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: black;
 }

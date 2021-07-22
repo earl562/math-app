@@ -1,10 +1,11 @@
 import React from 'react'
+import Logo from '../images/eveicon.png'
 
 export default function footer() {
     return (
-        <div>
-            <h1 className="footer">Put logo here</h1>
-            
+        <div className="footer">
+            <img className="logo" alt="logo for school" src={Logo}/>
+            <div className="team">Team Cassiopeia</div>
         </div>
     )
 }
