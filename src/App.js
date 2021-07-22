@@ -1,23 +1,18 @@
 import React from 'react'
-import logo from './logo.svg';
 import './App.css';
-import CandyShopWrapper from './Components/candyShopWrapper';
 import Money from './Components/money.js'
-import { useState } from 'react';
+import Header from './Components/header'
+import Footer from './Components/footer'
+import Awning from './Components/awning'
 
 
 function App() {
-  
-    //const [allowance, setAllowance] = useState((Math.random()*10).toFixed(2));
-    //const updateMoney = (price) => { 
-        //setAllowance(allowance - price);
-    
-
     return (
         <div className="App">
-            {/*Header Component */}
-            {/*Footer Component*/}      
-        <Money />
+            <Header />
+            <Awning />    
+            <Money />
+            <Footer />
         </div>
     );
 }
