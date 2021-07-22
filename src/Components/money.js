@@ -14,7 +14,7 @@ function Money() {
     return (
         <div className="App">
             <input id={"allowanceInput"}/>
-            <button onClick={() => setAllowance(document.getElementById("allowanceInput").value)}>
+            <button onClick={() => setAllowance(parseInt(document.getElementById("allowanceInput").value))}>
                 Set Money
             </button>
             <button onClick={() => setAllowance((Math.random() *10 ))}>
