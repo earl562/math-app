@@ -1,0 +1,61 @@
+//@import url('compass/css3.css');
+
+
+
+.awning {
+  width: 700px;
+  margin: 20px auto;
+  padding: 0;
+  height: 135px;
+  ul { 
+    margin: 0;
+    padding: 0;
+  }
+  .sign {
+    li {
+      padding: 0;
+      list-style-type: none;
+      height: 85px;
+      width: 7.142857142857143%;
+      float: left;
+      &:nth-child(odd):not(:first-child) {
+        background: #FF88BD;
+      }
+      &:nth-child(even):not(:last-child) {
+        background: #ADD9BD;      
+      }      
+      &:first-child {
+        width: 25px; 
+        height: 0;
+        border-bottom: 85px solid #FF88BD;
+        border-left: 25px solid transparent;
+      }
+      &:last-child {
+         width: 25px;
+        height: 0;
+        border-bottom: 85px solid #ADD9BD;
+        border-right: 25px solid transparent;
+      } 
+    }
+  }
+  .scallops {
+    padding: 0;
+    height: 30px;
+    li {
+      padding: 0;
+      list-style-type: none;
+      background: #FF88BD;
+      border-radius: 0 0 50% 50%;
+      width: 50px;
+      height: 50px;
+      float: left;
+     // @include box-shadow(hsla(0,0,0,0.25) 0 10px 5px);
+      &:nth-child(odd) {
+        background: #FF88BD; 
+      }
+      &:nth-child(even) {
+        background: #ADD9BD;      
+      }      
+    }
+  }
+}
