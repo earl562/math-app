@@ -85,6 +85,12 @@
     width: 100px;
 }
 
+.logoTop{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .team{
     padding-bottom: 5px;
     color: white;
