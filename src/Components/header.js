@@ -2,8 +2,12 @@ import React from 'react'
 
 export default function header() {
     return (
-        <div>
-            <h1 className="title">Candy Shop&#8482;</h1>
+        <div className="header">
+            <div className="left"/>
+            <h1 className="brand">Candy Shop&#8482;</h1>
+            <div className="dynamic">
+                Insert Dynamic Here
+            </div>
         </div>
     )
 }
