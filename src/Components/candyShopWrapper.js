@@ -8,38 +8,7 @@ import Taffy from '../images/taffy.png'
 import GummyBear from '../images/gummy-bear.png'
 import Candy from '../images/hard-candy.png'
 import Lollipops from '../images/lollipops.png'
-import Food from './foodFactsAPI'
-
-
-
-// export default function CandyShopWrapper(props) {
-//      chocolateBar = new CandyItemObject('Chocolate Bar', 2.25, ChocolateBar, "03424005")
-//      cottonCandy = new CandyItemObject('Cotton Candy', 3.05, CottonCandy, "0014200003259")
-//      gummyBear = new CandyItemObject('Gummy Bear', 5.00, GummyBear, "4001686301265")
-//      lollipops = new CandyItemObject('Lollipops', 1.50, Lollipops, "4004363300025")
-//      candy = new CandyItemObject('Hard Candy', 0.12, Candy, "40144016")
-//      taffy = new CandyItemObject('Taffy', 0.55, Taffy, "0030243349031")
-    
-//      candies = [chocolateBar,cottonCandy,gummyBear,lollipops,candy,taffy]
-    
-    
-    
-//     return (
-//         <div className="candyBox">
-//             {
-//                 candies.map((candy,index)=>{
-//                     return (
-//                         <CandyItem
-//                             key={index}
-//                             object={candy}
-//                             updateMoney={props.updateMoney}
-//                         />
-//                     )
-//                 })
-//             }
-//         </div>
-//     )
-// }
+import Broccoli from '../images/broccoli.png'
 
 
 export default class CandyShopWrapper extends Component {
@@ -59,14 +28,15 @@ export default class CandyShopWrapper extends Component {
     lollipops = new CandyItemObject('Lollipops', 1.50, Lollipops, "4004363300025")
     candy = new CandyItemObject('Hard Candy', 0.12, Candy, "40144016")
     taffy = new CandyItemObject('Taffy', 0.55, Taffy, "0030243349031")
+    broccoli = new CandyItemObject('Broccoli',-0.01, Broccoli, "03272466")
     
     candies = [this.chocolateBar, this.cottonCandy, 
         this.gummyBear, this.lollipops, 
-        this.candy, this.taffy]
+        this.candy, this.taffy, this.broccoli]
 
     apiCall(){
         const barcodes= ["03424005", "0014200003259", "4001686301265", 
-        "4004363300025", "40144016", "0030243349031", "03272466"]
+        "4004363300025", "40144016", "0030243349031", "03272466","03272466"]
 
         barcodes.map((id) => {
             axios.get(`https://world.openfoodfacts.org/api/v0/product/${id}.json`)
