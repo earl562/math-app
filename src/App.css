@@ -77,6 +77,20 @@
   font-weight: bold;
 }
 
+.submit2 {
+  background-color: #ff88bd;
+  border: none;
+  color: #acd4c9;
+  -webkit-text-stroke-width: .25px;
+  -webkit-text-stroke-color: black;
+  font-size: 24px;
+  text-decoration: none;
+  margin: 4px;
+  padding: 7px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
 .buttons{
   justify-content: center;
 }
@@ -89,6 +103,7 @@
     width: 150px;
     margin-left: auto;
     margin-right: auto;
+    position:relative;
 }
 
 .team{
@@ -129,4 +144,22 @@
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
     -webkit-text-stroke-width: .3px;
     -webkit-text-stroke-color: black;
+  }
+
+  .firstDiv {
+    position:relative;
+    width:100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #acd4c9;
+  }
+  
+  .right-col {
+        right: 0;
+        position:absolute;
+        top:0px;
+        padding:10px;
+        
   }
