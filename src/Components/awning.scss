@@ -22,7 +22,7 @@
         background: #FF88BD;
       }
       &:nth-child(even):not(:last-child) {
-        background: #ADD9BD;      
+        background: #acd4c9;      
       }      
       &:first-child {
         width: 25px; 
@@ -33,7 +33,7 @@
       &:last-child {
          width: 25px;
         height: 0;
-        border-bottom: 85px solid #ADD9BD;
+        border-bottom: 85px solid #acd4c9;
         border-right: 25px solid transparent;
       } 
     }
@@ -54,7 +54,7 @@
         background: #FF88BD; 
       }
       &:nth-child(even) {
-        background: #ADD9BD;      
+        background: #acd4c9;      
       }      
     }
   }
