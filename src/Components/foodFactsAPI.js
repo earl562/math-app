@@ -20,8 +20,8 @@ export default class foodFactsAPI extends Component {
         barcodes.map((id) => {
             axios.get(`https://world.openfoodfacts.org/api/v0/product/${id}.json`)
                 .then(res => {
-                        console.log(res.data.product.nutriments)
-                        this.setState({ [id]:  res.data.product.nutriments});
+                        console.log(res.data.product.nutriments.sugars)
+                        this.setState({ [id]:  res.data.product.nutriments.sugars});
                 })
         })
         

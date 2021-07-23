@@ -16,6 +16,7 @@ export default function CandyItem(props) {
                 onClick = {() => props.updateMoney(props.object.price)}/>
             <p>{props.object.name}</p>
             <p>${props.object.price.toFixed(2)}</p>
+            <p>Sugar Content: {props.object.nutriments}g</p>
         </div>
     )
 }

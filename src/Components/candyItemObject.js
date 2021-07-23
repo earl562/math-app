@@ -1,8 +1,9 @@
 class CandyItemObject {
-    constructor(name,price,path){
+    constructor(name,price,path,barcode){
         this.name = name;
         this.price = price;
         this.path = path;
+        this.barcode = barcode;
     }
 
     name(){
@@ -15,6 +16,10 @@ class CandyItemObject {
 
     path(){
         return this.path
+    }
+
+    barcode(){
+        return this.barcode
     }
 }
 
