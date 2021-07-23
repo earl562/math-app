@@ -2,7 +2,7 @@ import React from 'react'
 
 
 const imageStyles={
-    height: "100px",
+    height: "80px",
     display: "inline-block"
 }
 
@@ -16,7 +16,7 @@ export default function CandyItem(props) {
                 onClick = {() => props.updateMoney(props.object.price)}/>
             <p>{props.object.name}</p>
             <p>${props.object.price.toFixed(2)}</p>
-            <p>Sugar Content: {props.object.nutriments}g</p>
+            <p>Sugar: {props.nutriments}g</p>
         </div>
     )
 }
